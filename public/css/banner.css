@@ -1,0 +1,561 @@
+@charset 'utf-8';
+.type-page {
+  width: 1190px;
+  margin: auto;
+}
+.sec {
+  background-color: #f4f4f4;
+  padding-top: 10px;
+}
+.sec > div {
+  height: 710px;
+  width: 100%;
+  background: url('../img/sec.webp') center 0px no-repeat;
+}
+.sec > div > .type-page > div > ul {
+  padding: 10px 0;
+  background: #fefefe;
+  width: 190px;
+  margin-right: 10px;
+  float: left;
+}
+.sec > div > .type-page > div > ul > li {
+  padding-left: 18px;
+  width: 172px;
+  height: 25px;
+  line-height: 25px;
+  transition: background-color 0.2s;
+  background: #fefefe;
+}
+.sec > div > .type-page > div > ul > li > a {
+  color: #333;
+  font-size: 14px;
+  padding: 0;
+}
+.sec > div > .type-page > div > ul > li:hover {
+  background: #f4f4f4;
+}
+.sec > div > .type-page > div > ul > li:hover > a {
+  color: red;
+}
+.sec > div > .type-page > div > ul > li > span {
+  color: #636363;
+  font-size: 12px;
+  padding: 0;
+}
+.sec > div > .type-page > div > .slider {
+  width: 590px;
+  height: 470px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.sec > div > .type-page > div > .slider > .imgContain {
+  width: 5310px;
+}
+.sec > div > .type-page > div > .slider > .imgContain > a {
+  float: left;
+}
+.sec > div > .type-page > div > .slider > .imgContain > a > img {
+  width: 590px;
+  height: 470px;
+}
+.sec > div > .type-page > div > .slider > span {
+  display: block;
+  width: 25px;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease;
+}
+.sec > div > .type-page > div > .slider > span:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.sec > div > .type-page > div > .slider > span > i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+.sec > div > .type-page > div > .slider > span:nth-of-type(1) {
+  border-radius: 0 100%  100% 0;
+}
+.sec > div > .type-page > div > .slider > span:nth-of-type(2) {
+  border-radius: 100% 0 0 100% ;
+  right: 0;
+}
+.sec > div > .type-page > div > .slider > ul {
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+}
+.sec > div > .type-page > div > .slider > ul > li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-right: 4px;
+  transition: background-color 0.2s;
+}
+.sec > div > .type-page > div > .slider > ul > li.active {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transform: translateY(-2px);
+}
+.sec > div > .type-page > div > .recommend {
+  margin: 0 10px;
+  float: left;
+  position: relative;
+}
+.sec > div > .type-page > div > .recommend > div {
+  padding-bottom: 10px;
+}
+.sec > div > .type-page > div > .recommend > div > a > img {
+  width: 190px;
+  height: 150px;
+}
+.sec > div > .type-page > div > .recommend > div:nth-of-type(3) {
+  padding-bottom: 0;
+}
+.sec > div > .type-page > div > .recommend > div:nth-of-type(2) > span {
+  display: block;
+  width: 25px;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease;
+}
+.sec > div > .type-page > div > .recommend > div:nth-of-type(2) > span:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.sec > div > .type-page > div > .recommend > div:nth-of-type(2) > span > i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+.sec > div > .type-page > div > .recommend > div:nth-of-type(2) > span:nth-of-type(1) {
+  border-radius: 0 100%  100% 0;
+}
+.sec > div > .type-page > div > .recommend > div:nth-of-type(2) > span:nth-of-type(2) {
+  border-radius: 100% 0 0 100% ;
+  right: 0;
+}
+.sec > div > .type-page > div > .bannerRight {
+  width: 170px;
+  height: 470px;
+  float: right;
+  padding: 0 10px;
+  background: #fff;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(1) {
+  padding: 10px;
+  background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(1) > a {
+  float: left;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(1) > a > img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  float: left;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(1) > div {
+  float: left;
+  margin-left: 10px;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(1) > div > p > a {
+  color: #666;
+  font-size: 12px;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(1) > div > p > a:hover {
+  color: red;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(2) {
+  padding-bottom: 12px;
+  position: relative;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(2) > a {
+  display: block;
+  margin: 0 5px;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 13px;
+  float: left;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(2) > a:nth-child(1) {
+  background: #e1251b;
+  color: white;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(2) > a:nth-child(2) {
+  background: #363634;
+  color: #e5d790;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(2) > a:hover {
+  background-color: #c81623;
+  color: #fff;
+}
+.sec > div > .type-page > div > .bannerRight > h5:nth-child(3) {
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 10px 0;
+}
+.sec > div > .type-page > div > .bannerRight > h5:nth-child(3) > a {
+  float: right;
+  font-size: 12px;
+  color: #999;
+}
+.sec > div > .type-page > div > .bannerRight > h5:nth-child(3) > a:hover {
+  color: #c81623;
+}
+.sec > div > .type-page > div > .bannerRight > ul:nth-child(4) {
+  color: #666;
+  font-size: 12px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.sec > div > .type-page > div > .bannerRight > ul:nth-child(4) > li {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+}
+.sec > div > .type-page > div > .bannerRight > ul:nth-child(4) > li > a {
+  color: #666;
+}
+.sec > div > .type-page > div > .bannerRight > ul:nth-child(4) > li > a > span {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  height: 16px;
+  width: 35px;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: 0;
+  color: #e1251b;
+  background-color: rgba(225, 37, 27, 0.08);
+  margin-right: 6px;
+}
+.sec > div > .type-page > div > .bannerRight > ul:nth-child(4):nth-child(4)::before {
+  content: "";
+  height: 1px;
+  width: 160px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+}
+.sec > div > .type-page > div > .bannerRight > .tabs {
+  font-size: 12px;
+  position: relative;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > ul > li {
+  float: left;
+  color: #666;
+  height: 30px;
+  width: 33.33%;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > ul > li > a {
+  color: #666;
+  display: inline-block;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > ul > li.active > a {
+  border-color: red;
+  color: red;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div {
+  position: absolute;
+  height: 180px;
+  width: 170px;
+  margin-top: 10px;
+  display: none;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div.show {
+  display: block;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > ul > li {
+  float: left;
+  width: 33.33%;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > ul > li > a {
+  color: #666;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > ul > li > a.active {
+  color: #e40015;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(1) {
+  display: none;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(1) > p {
+  margin-top: 8px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(1) > p > span {
+  float: left;
+  width: 34px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(1) > p > input {
+  width: 120px;
+  color: #c2c2c2;
+  float: left;
+  border: 1px solid #e7e7e7;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(1) > p > select {
+  border: 1px solid #e7e7e7;
+  width: 120px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(1) > .Recharge {
+  height: 16px;
+  color: red;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(1) > div > #btn1 {
+  width: 60px;
+  height: 20px;
+  background: #e40015;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 18px;
+  font-size: 12px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(1) > a {
+  display: block;
+  margin-top: 10px;
+  color: blue;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(1) > a:hover {
+  color: red;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(2) {
+  display: none;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(2) > p {
+  margin-top: 8px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(2) > p > span {
+  color: #666;
+  float: left;
+  width: 34px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(2) > p > input {
+  width: 120px;
+  color: #c2c2c2;
+  float: left;
+  border: 1px solid #e7e7e7;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-child(2) > select:nth-of-type(1) {
+  border: 1px solid #e7e7e7;
+  width: 58px;
+  float: left;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-child(2) > select:nth-of-type(2) {
+  border: 1px solid #e7e7e7;
+  width: 58px;
+  margin-left: 5px;
+  float: left;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(2) > .Recharge {
+  height: 16px;
+  color: red;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(2) > div > #btn1 {
+  width: 60px;
+  height: 20px;
+  background: #e40015;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 18px;
+  font-size: 12px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(2) > div > a {
+  margin-top: 10px;
+  color: blue;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(2) > div > a:hover {
+  color: red;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(3) {
+  display: none;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(3) > p {
+  margin-top: 8px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(3) > p > span {
+  float: left;
+  width: 34px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(3) > p > input {
+  width: 120px;
+  color: #c2c2c2;
+  float: left;
+  border: 1px solid #e7e7e7;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(3) > p > select {
+  border: 1px solid #e7e7e7;
+  width: 120px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(3) > .Recharge {
+  height: 16px;
+  color: red;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(3) > div > #btn3 {
+  width: 60px;
+  height: 20px;
+  background: #e40015;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 18px;
+  font-size: 12px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(3) > a {
+  display: block;
+  margin-top: 10px;
+  color: blue;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div:nth-of-type(3) > a:hover {
+  color: red;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(1) > div.show {
+  display: block;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > ul > li {
+  float: left;
+  width: 33.33%;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > ul > li > a {
+  color: #666;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > ul > li > a.active {
+  color: #e40015;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > ul > :nth-of-type(2) {
+  width: 60px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > ul > :nth-of-type(3) {
+  width: 45px;
+  margin-left: 8px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div {
+  width: 100%;
+  overflow: hidden;
+  color: #666;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket {
+  margin-top: 5px;
+  width: 300%;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(1) {
+  width: 33.33%;
+  float: left;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(1) > p > input[type='text'] {
+  width: 120px;
+  height: 18px;
+  line-height: 18px;
+  border: 1px solid #e7e7e7;
+  color: #c2c2c2;
+  text-align: center;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(1) > div {
+  margin-top: 10px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(1) > div > #btn4 {
+  width: 60px;
+  height: 20px;
+  background: #e40015;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 18px;
+  font-size: 12px;
+  float: left;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(1) > div > a {
+  float: right;
+  margin-left: 3px;
+  display: block;
+  color: blue;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(1) > div > a:hover {
+  color: red;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(2) {
+  width: 33.33%;
+  float: left;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(2) > p > input[type='text'] {
+  width: 120px;
+  height: 18px;
+  line-height: 18px;
+  border: 1px solid #e7e7e7;
+  color: #c2c2c2;
+  text-align: center;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(2) > div {
+  margin-top: 10px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(2) > div > #btn5 {
+  width: 60px;
+  height: 20px;
+  background: #e40015;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 18px;
+  font-size: 12px;
+  float: left;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(2) > div > a {
+  float: right;
+  margin-left: 3px;
+  display: block;
+  color: blue;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(2) > div > a:hover {
+  color: red;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(3) > div {
+  width: 100%;
+  margin-top: 15px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(3) > div > img {
+  width: 75px;
+  height: 96px;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(3) > div > img:nth-child(1) {
+  float: left;
+}
+.sec > div > .type-page > div > .bannerRight > .tabs > div:nth-of-type(2) > div > .ticket > div:nth-child(3) > div > img:nth-child(2) {
+  float: right;
+}
+.sec > div > .type-page > div > .bannerRight > div:nth-of-type(2)::before {
+  content: "";
+  height: 1px;
+  width: 160px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+}

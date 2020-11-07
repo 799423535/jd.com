@@ -1,0 +1,446 @@
+@charset 'utf-8';
+.type-page {
+  width: 1190px;
+  margin: auto;
+}
+header > .header-top {
+  background: #e3e4e5;
+  font-size: 12px;
+  border-bottom: 1px solid #ddd;
+}
+header > .header-top > .type-page > div {
+  float: left;
+  line-height: 28px;
+  padding: 0 5px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #e3e4e5;
+  border-bottom: 0;
+}
+header > .header-top > .type-page > div:hover > div {
+  display: block;
+}
+header > .header-top > .type-page > div > a {
+  color: #999;
+}
+header > .header-top > .type-page > div > a > i {
+  color: red;
+  font-size: 14px;
+}
+header > .header-top > .type-page > div:hover {
+  box-shadow: 0 0 0 1px #ccc;
+  background: white;
+}
+header > .header-top > .type-page > div:hover > a {
+  color: red;
+  height: 30px;
+}
+header > .header-top > .type-page > div > div {
+  width: 300px;
+  position: absolute;
+  top: 28px;
+  padding: 10px;
+  left: -2px;
+  border: 1px solid #f4f4f4;
+  background-color: #fff;
+  color: #999;
+  display: none;
+  z-index: 999;
+}
+header > .header-top > .type-page > div > div > ul > li {
+  float: left;
+  width: 60px;
+  text-align: center;
+}
+header > .header-top > .type-page > div > div > ul > li > a {
+  color: #999;
+  display: inline-block;
+  padding: 0 5px;
+}
+header > .header-top > .type-page > div > div > ul > li > a:hover {
+  background: #ccc;
+}
+header > .header-top > .type-page > div > div > ul > li > a.active {
+  background: red;
+  color: white;
+}
+header > .header-top > .type-page > div > div > div {
+  margin: 10px;
+  border-top: 1px dashed #ccc;
+}
+header > .header-top > .type-page > div > div > div > p {
+  margin: 10px 0;
+}
+header > .header-top > .type-page > div > div > div > div {
+  float: left;
+}
+header > .header-top > .type-page > div > div > div > div > a {
+  display: block;
+  width: 130px;
+  color: #999;
+}
+header > .header-top > .type-page > div > div > div > div > a:hover {
+  color: red;
+}
+header > .header-top > .type-page > ul {
+  float: right;
+}
+header > .header-top > .type-page > ul > li {
+  padding: 0 8px;
+  float: left;
+  color: #999;
+  position: relative;
+  line-height: 28px;
+}
+header > .header-top > .type-page > ul > li > a {
+  color: #999;
+}
+header > .header-top > .type-page > ul > li > a:hover {
+  color: red;
+}
+header > .header-top > .type-page > ul > li > i {
+  z-index: 999;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+}
+header > .header-top > .type-page > ul > li.havei {
+  padding-right: 18px;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(even) {
+  padding: 0;
+  margin: 11px 5px 0;
+  width: 1px;
+  height: 10px;
+  background: #ccc;
+}
+header > .header-top > .type-page > ul li:nth-of-type(5) {
+  position: relative;
+}
+header > .header-top > .type-page > ul li:nth-of-type(5):hover {
+  border: 1px solid #ccc;
+  background: white;
+}
+header > .header-top > .type-page > ul li:nth-of-type(5):hover > div {
+  display: block;
+}
+header > .header-top > .type-page > ul li:nth-of-type(5) > div {
+  display: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1000;
+  width: 240px;
+  top: 28px;
+  left: -1px;
+}
+header > .header-top > .type-page > ul li:nth-of-type(5) > div > div {
+  padding: 10px;
+}
+header > .header-top > .type-page > ul li:nth-of-type(5) > div > div > div {
+  width: 110px;
+  float: left;
+}
+header > .header-top > .type-page > ul li:nth-of-type(5) > div > div > div > a {
+  color: #999;
+}
+header > .header-top > .type-page > ul li:nth-of-type(5) > div > div > div > a:hover {
+  color: red;
+}
+header > .header-top > .type-page > ul li:nth-of-type(5) > div > div:nth-of-type(2) {
+  border-top: 1px dashed #ccc;
+}
+header > .header-top > .type-page > ul li:nth-of-type(9) {
+  position: relative;
+}
+header > .header-top > .type-page > ul li:nth-of-type(9):hover {
+  border: 1px solid #ccc;
+  background: white;
+}
+header > .header-top > .type-page > ul li:nth-of-type(9):hover > div {
+  display: block;
+}
+header > .header-top > .type-page > ul li:nth-of-type(9) > div {
+  display: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  z-index: 999;
+  width: 130px;
+  top: 28px;
+  left: -1px;
+  padding: 5px 10px;
+}
+header > .header-top > .type-page > ul li:nth-of-type(9) > div > div {
+  width: 60px;
+  float: left;
+}
+header > .header-top > .type-page > ul li:nth-of-type(9) > div > div > a {
+  color: #999;
+}
+header > .header-top > .type-page > ul li:nth-of-type(9) > div > div > a:hover {
+  color: red;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(11) {
+  position: relative;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(11):hover {
+  border: 1px solid #ccc;
+  background: white;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(11):hover > div {
+  display: block;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(11) > div {
+  display: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  z-index: 999;
+  width: 150px;
+  top: 28px;
+  left: -97px;
+  padding: 10px;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(11) > div > div {
+  display: block;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(11) > div > div > h2 {
+  color: #666;
+  font-size: 12px;
+  font-weight: bolder;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(11) > div > div > div {
+  width: 70px;
+  float: left;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(11) > div > div > div > a {
+  color: #999;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(11) > div > div > div > a:hover {
+  color: red;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(11) > div > div:nth-of-type(2) {
+  border-top: 1px dashed #ccc;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(13) {
+  position: relative;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(13):hover {
+  border: 1px solid #ccc;
+  background: white;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(13):hover > div {
+  display: block;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(13) > div {
+  width: 1188px;
+  padding: 15px 0;
+  background: white;
+  position: absolute;
+  z-index: 1000;
+  top: 28px;
+  display: none;
+  border: 1px solid #ccc;
+  right: -90px;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(13) > div > div {
+  width: 255px;
+  padding-left: 20px;
+  float: left;
+  border-left: 1px solid #eee;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(13) > div > div > p {
+  font-size: 12px;
+  font-weight: bolder;
+  width: 100%;
+  float: left;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(13) > div > div > div {
+  width: 85px;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(13) > div > div > div > a {
+  color: #999;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(13) > div > div > div > a:hover {
+  color: red;
+}
+header > .header-top > .type-page > ul > li:nth-of-type(13) > div > div:nth-of-type(1) {
+  width: 340px;
+  border: none;
+}
+header > .header-top > .type-page > ul > li:last-child {
+  width: 60px;
+  text-align: center;
+  position: relative;
+}
+header > .header-top > .type-page > ul > li:last-child:hover {
+  background: white;
+}
+header > .header-top > .type-page > ul > li:last-child:hover > div {
+  display: block;
+}
+header > .header-top > .type-page > ul > li:last-child > div {
+  display: none;
+  right: -1px;
+  top: 28px;
+  border: 1px solid #ccc;
+  position: absolute;
+  z-index: 999;
+  background: white;
+}
+header > .header-top > .type-page > ul > li:last-child > div > div {
+  width: 190px;
+  height: 70px;
+  padding: 15px 0;
+  float: left;
+  border-bottom: 1px solid #e7e7e7;
+  color: #666;
+}
+header > .header-top > .type-page > ul > li:last-child > div > div > img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-left: 5px;
+}
+header > .header-top > .type-page > ul > li:last-child > div > div > div {
+  margin-left: 8px;
+  float: left;
+}
+header > .header-top > .type-page > ul > li:last-child > div > div > div > h5 {
+  font-size: 12px;
+  font-weight: bolder;
+  text-align: left;
+  line-height: 17px;
+}
+header > .header-top > .type-page > ul > li:last-child > div > div > div > p {
+  color: red;
+  line-height: 17px;
+  text-align: left;
+}
+header > .header-top > .type-page > ul > li:last-child > div > div > div > p > a {
+  color: #ccc;
+  font-size: 20px;
+  padding-right: 8px;
+}
+header > .header-bot {
+  border-bottom: 1px solid #ddd;
+}
+header > .header-bot > .type-page > div:nth-child(1) {
+  float: left;
+  padding: 10px 0;
+}
+header > .header-bot > .type-page > div:nth-child(1) > a {
+  display: block;
+}
+header > .header-bot > .type-page > div:nth-child(1) > a > img {
+  width: 190px;
+  height: 120px;
+}
+header > .header-bot > .type-page > div:nth-child(2) {
+  float: left;
+  width: 780px;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form {
+  position: relative;
+  margin-top: 25px;
+  margin-left: 60px;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > input {
+  padding: 2px 44px 2px 17px;
+  font-size: 12px;
+  color: #333;
+  width: 425px;
+  height: 28px;
+  border: 2px solid #e1251b;
+  float: left;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(2) {
+  position: absolute;
+  z-index: 999;
+  left: 453px;
+  top: 16px;
+  font-size: 14px;
+  transform: translateY(-50%);
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(2):hover {
+  color: red;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > button {
+  float: left;
+  background: #e1251b;
+  border: 0;
+  height: 36px;
+  width: 60px;
+  font-weight: bold;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > button:hover {
+  background: #c81623;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > button > i {
+  color: white;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(4) {
+  float: left;
+  display: block;
+  width: 130px;
+  height: 34px;
+  border: 1px solid #eee;
+  line-height: 36px;
+  margin-left: 20px;
+  color: red;
+  text-align: center;
+  font-size: 12px;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(4):hover {
+  border-color: #e1251b;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(4) > i {
+  font-size: 12px;
+  margin-right: 8px;
+  font-weight: bold;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > p {
+  float: left;
+  font-size: 12px;
+  padding-top: 5px;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > p > a {
+  color: #999;
+  margin-right: 8px;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > p > a:hover {
+  color: red;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > p > a.active {
+  color: red;
+}
+header > .header-bot > .type-page > div:nth-child(2) > ul {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+header > .header-bot > .type-page > div:nth-child(2) > ul > li {
+  float: left;
+  margin: 0 11px;
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+}
+header > .header-bot > .type-page > div:nth-child(2) > ul > li > a {
+  color: #333;
+}
+header > .header-bot > .type-page > div:nth-child(2) > ul > li > a:hover {
+  color: #c81623;
+}
+header > .header-bot > .type-page > div:nth-child(2) > ul > li > a.active {
+  color: #e1251b;
+  font-weight: 700;
+}
+header > .header-bot > .type-page > div:nth-child(3) {
+  float: left;
+  padding: 10px 0 10px 20px;
+}
