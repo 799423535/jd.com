@@ -27,6 +27,13 @@
       "unicode_decimal": 59642
     },
     {
+      "icon_id": "8315465",
+      "name": "右箭头",
+      "font_class": "icon",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
       "icon_id": "8507620",
       "name": "英国",
       "font_class": "yingguo-duo",
@@ -37,8 +44,8 @@
       "icon_id": "8622566",
       "name": "iPhone",
       "font_class": "iPhone",
-      "unicode": "e60c",
-      "unicode_decimal": 58892
+      "unicode": "e60d",
+      "unicode_decimal": 58893
     },
     {
       "icon_id": "9711538",
