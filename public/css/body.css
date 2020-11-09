@@ -1,1 +1,619 @@
 @charset 'utf-8';
+.body {
+  background: #f5f5f5;
+}
+.body > .body-01 {
+  width: 1270px;
+  margin: auto;
+  height: 590px;
+  background: url(../img/body01.webp);
+  background-size: cover;
+}
+.body > .body-01 > .container {
+  width: 1200px;
+  margin: auto;
+  padding-top: 140px;
+}
+.body > .body-01 > .container > .con-left {
+  width: 1000px;
+  float: left;
+}
+.body > .body-01 > .container > .con-left > ul > li {
+  float: left;
+  width: 190px;
+  height: 210px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: url(../img/body1-bg.webp);
+  background-size: 190px 210px;
+}
+.body > .body-01 > .container > .con-left > ul > li > a > div:nth-child(1) {
+  height: 130px;
+  padding: 10px 30px;
+  background: white;
+}
+.body > .body-01 > .container > .con-left > ul > li > a > div:nth-child(1) > img {
+  width: 130px;
+  height: 130px;
+}
+.body > .body-01 > .container > .con-left > ul > li > a > div:nth-child(2) {
+  position: relative;
+  height: 60px;
+}
+.body > .body-01 > .container > .con-left > ul > li > a > div:nth-child(2) > div {
+  width: 174px;
+  height: 30px;
+  position: relative;
+  margin: auto;
+}
+.body > .body-01 > .container > .con-left > ul > li > a > div:nth-child(2) > div > img {
+  width: 100%;
+  height: 100%;
+}
+.body > .body-01 > .container > .con-left > ul > li > a > div:nth-child(2) > div > p:nth-of-type(1) {
+  position: absolute;
+  left: 0;
+  top: 6.5px;
+  width: 174px;
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
+  line-height: 17px;
+}
+.body > .body-01 > .container > .con-left > ul > li > a > div:nth-child(2) > p {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 190px;
+  height: 16px;
+  text-align: center;
+  font-size: 16px;
+  color: #de452b;
+  line-height: 16px;
+}
+.body > .body-01 > .container > .con-left > ul > li:nth-child(5) {
+  margin-right: 0;
+}
+.body > .body-01 > .container > .con-left > ul > li:nth-child(10) {
+  margin-right: 0;
+}
+.body > .body-01 > .container > .con-right {
+  float: left;
+  width: 190px;
+}
+.body > .body-01 > .container > .con-right > a > img {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.body > .body-02 {
+  padding: 20px 0 20px;
+}
+.body > .body-02 > div {
+  padding-top: 20px;
+}
+.body > .body-02 > div > div {
+  float: left;
+  width: 570px;
+  height: 340px;
+  padding-left: 20px;
+  background: white;
+}
+.body > .body-02 > div > .left {
+  margin-right: 10px;
+  position: relative;
+}
+.body > .body-02 > div > .left > h1 {
+  position: absolute;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  width: 115px;
+}
+.body > .body-02 > div > .left > h1 > a {
+  display: block;
+  color: #333;
+  position: relative;
+}
+.body > .body-02 > div > .left > h1 > a > i {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.body > .body-02 > div > .left > div {
+  width: 100%;
+}
+.body > .body-02 > div > .left > div > ul {
+  float: right;
+  height: 60px;
+  line-height: 60px;
+}
+.body > .body-02 > div > .left > div > ul > li {
+  float: left;
+  margin: 0 13.5px;
+  cursor: pointer;
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+.body > .body-02 > div > .left > div > ul > li > a {
+  color: #999;
+  border-bottom: 1px solid transparent;
+}
+.body > .body-02 > div > .left > div > ul > li > a:hover {
+  color: #c81623;
+  border-color: #c81623;
+}
+.body > .body-02 > div > .left > div > ul > li > a.active {
+  color: #c81623;
+  border-color: #c81623;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom {
+  display: none;
+  padding: 0 15px 15px;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 560px;
+  margin-top: 60px;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div {
+  height: 265px;
+  color: red;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > a > .left-01 {
+  float: left;
+  width: 170px;
+  height: 100%;
+  background: rgba(109, 126, 146, 0.05);
+  position: relative;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > a > .left-01 > div {
+  display: inline-block;
+  width: 90px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  background-image: url(../img/body02-bg2.png);
+  background-size: cover;
+  background-position: 50%;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 0;
+  text-align: center;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > a > .left-01 > img {
+  width: 120px;
+  height: 120px;
+  margin: 45px auto 0;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > a > .left-01 > p:nth-of-type(1) {
+  margin-top: 9px;
+  margin-bottom: 4px;
+  height: 19px;
+  line-height: 19px;
+  width: 150px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  color: #333;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > a > .left-01 > p:nth-of-type(1):hover {
+  color: red;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > a > .left-01 > p:nth-of-type(2) {
+  text-align: center;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > a > .left-01 > p:nth-of-type(2) > span:nth-child(1) {
+  font-size: 18px;
+  color: #e1251b;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > a > .left-01 > p:nth-of-type(2) > span:nth-child(2) {
+  width: 100%;
+  text-decoration: line-through;
+  font-family: sans-serif, serif;
+  color: #999;
+  font-size: 12px;
+  line-height: 14px;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > .left-02 {
+  float: left;
+  width: 390px;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > .left-02 > li {
+  float: left;
+  margin: 18px 0 30px 19px;
+  width: 170px;
+  height: 90px;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > .left-02 > li:hover .span-01 {
+  color: red;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > .left-02 > li > a > img {
+  width: 84px;
+  height: 84px;
+  float: left;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > .left-02 > li > a div {
+  float: left;
+  width: 75px;
+  padding-left: 5px;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > .left-02 > li > a div > span:nth-child(1) {
+  display: block;
+  width: 100%;
+  color: #333;
+  height: 32px;
+  font-size: 12px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > .left-02 > li > a div > span:nth-child(2) {
+  font-size: 14px;
+  line-height: 16px;
+  color: #e1251b;
+  letter-spacing: 0;
+  font-weight: 700;
+  display: block;
+  margin-top: 5px;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom > div > .left-02 > li > a div > span:nth-child(3) {
+  display: block;
+  width: 100%;
+  text-decoration: line-through;
+  font-family: sans-serif, serif;
+  color: #999;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 5px;
+}
+.body > .body-02 > div > .left > div > .tabs-bottom.active {
+  display: block;
+}
+.body > .body-02 > div > .right {
+  position: relative;
+}
+.body > .body-02 > div > .right > h1 {
+  position: absolute;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  width: 115px;
+}
+.body > .body-02 > div > .right > h1 > a {
+  display: block;
+  color: #333;
+  position: relative;
+}
+.body > .body-02 > div > .right > h1 > a > i {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.body > .body-02 > div > .right > .right-main {
+  margin-top: 60px;
+}
+.body > .body-02 > div > .right > .right-main > div {
+  float: left;
+  background: linear-gradient(180deg, rgba(245, 175, 175, 0.05), rgba(79, 3, 3, 0.05));
+  width: 270px;
+  height: 270px;
+}
+.body > .body-02 > div > .right > .right-main > div > a > img:nth-child(1) {
+  width: 75px;
+  height: 35px;
+  margin: 15px auto 0;
+}
+.body > .body-02 > div > .right > .right-main > div > a > h6:nth-child(2) {
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  z-index: 1;
+  margin-top: 6px;
+}
+.body > .body-02 > div > .right > .right-main > div > a > p:nth-child(3) {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0 13px;
+}
+.body > .body-02 > div > .right > .right-main > div > a > img:nth-child(4) {
+  width: 130px;
+  height: 130px;
+  margin: auto;
+}
+.body > .body-02 > div > .right > .right-main > ul {
+  float: right;
+  width: 270px;
+  height: 312px;
+  margin-top: -40px;
+}
+.body > .body-02 > div > .right > .right-main > ul > li {
+  float: left;
+  width: 135px;
+  height: 72px;
+  padding: 14px 0;
+  position: relative;
+}
+.body > .body-02 > div > .right > .right-main > ul > li > a > img {
+  width: 100px;
+  height: 50px;
+  margin: auto;
+}
+.body > .body-02 > div > .right > .right-main > ul > li > a > p {
+  color: #666;
+  margin-top: 6px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.body > .body-02 > div > .right > .right-main > ul > li::after {
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  right: 0;
+  top: 50%;
+  margin-top: -30px;
+  background: linear-gradient(180deg, white, #eeeeee, #eeeeee, white);
+  content: "";
+}
+.body > .body-03 {
+  padding-bottom: 20px;
+}
+.body > .body-03 > .type-page > .left {
+  float: left;
+  background: url(../img/body03-left01.png);
+  background-color: #eee;
+  background-size: 100% 100%;
+  width: 190px;
+  height: 260px;
+  margin-right: 10px;
+}
+.body > .body-03 > .type-page > .left > div {
+  width: 160px;
+  height: 90px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/body03-left02.png);
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.body > .body-03 > .type-page > .left > div > p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  padding-top: 55px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  display: block;
+}
+.body > .body-03 > .type-page > .left:hover i {
+  color: red;
+}
+.body > .body-03 > .type-page > .right {
+  float: left;
+  width: 950px;
+  padding: 0 20px;
+  height: 260px;
+  background: white;
+  overflow: auto;
+}
+.body > .body-03 > .type-page > .right > ul {
+  width: 3000px;
+}
+.body > .body-03 > .type-page > .right > ul > li:nth-child(odd) {
+  margin-top: 50px;
+  margin-right: 50px;
+  float: left;
+}
+.body > .body-03 > .type-page > .right > ul > li:nth-child(odd) > a > p {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.body > .body-03 > .type-page > .right > ul > li:nth-child(odd) > a > img {
+  width: 150px;
+  height: 150px;
+}
+.body > .body-03 > .type-page > .right > ul > li:nth-child(odd):hover > a > p {
+  color: red;
+}
+.body > .body-03 > .type-page > .right > ul > li:nth-child(even) {
+  margin-top: 20px;
+  margin-right: 50px;
+  float: left;
+}
+.body > .body-03 > .type-page > .right > ul > li:nth-child(even) > a > p {
+  width: 150px;
+  margin-top: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.body > .body-03 > .type-page > .right > ul > li:nth-child(even) > a > p:hover {
+  color: red;
+}
+.body > .body-03 > .type-page > .right > ul > li:nth-child(even) > a > img {
+  width: 150px;
+  height: 150px;
+}
+.body > .body-03 > .type-page > .right > ul > li:nth-child(even):hover > a > p {
+  color: red;
+}
+.body > .body-04 {
+  padding-bottom: 20px;
+}
+.body > .body-04 > .type-page > ul > li {
+  width: 290px;
+  height: 340px;
+  float: left;
+  margin-right: 10px;
+  background: white;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > ul {
+  width: 280px;
+  margin: auto;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > ul > li {
+  float: left;
+  height: 40px;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > ul > li > a {
+  display: inline-block;
+  max-width: 70px;
+  color: #999;
+  font-size: 12px;
+  background-color: #f6f6f6;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 4px;
+  width: 62px;
+  text-align: center;
+  border-radius: 12px;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > ul > li > a.active {
+  color: #fff;
+  background-color: #e1251b;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .left {
+  width: 260px;
+  height: 70px;
+  margin-left: 15px;
+  width: 28px;
+  float: left;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .left > div {
+  margin-bottom: 10px;
+  height: 55px;
+  padding-top: 15px;
+  text-align: center;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .left > div > div {
+  width: 28px;
+  height: 40px;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .left > div > div > span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e6ac36;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .left > div > div > p {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .left > div:nth-child(1) > div {
+  background: url(../img/body04-02-01.png) no-repeat;
+  background-size: 100% 100%;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .left > div:nth-child(2) > div {
+  background: url(../img/body04-02-02.png) no-repeat;
+  background-size: 100% 100%;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .left > div:nth-child(3) > div {
+  background: url(../img/body04-02-03.png) no-repeat;
+  background-size: 100% 100%;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .right {
+  float: left;
+  margin-right: 7px;
+  width: 240px;
+  position: relative;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .right > .tabs-bot {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .right > .tabs-bot > div:nth-child(1) {
+  margin: 0;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .right > .tabs-bot > div {
+  position: relative;
+  margin-top: 10px;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .right > .tabs-bot > div > img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .right > .tabs-bot > div > span {
+  position: absolute;
+  left: 90px;
+  top: 50%;
+  width: 140px;
+  max-height: 2.6em;
+  line-height: 1.3em;
+  font-size: 14px;
+  word-break: break-all;
+  transform: translateY(-50%);
+  color: #333;
+  overflow: hidden;
+}
+.body > .body-04 > .type-page > ul > li:nth-child(2) > div > .right > .tabs-bot.active {
+  display: block;
+}
+.body > .body-04 > .type-page > ul > li:last-child {
+  margin-right: 0;
+}
+.body > .body-04 > .type-page > ul .h {
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  padding: 0 20px;
+}
+.body > .body-04 > .type-page > ul .h > a {
+  display: block;
+  color: #333;
+  position: relative;
+  font-weight: 700;
+}
+.body > .body-04 > .type-page > ul .h > a > span {
+  float: left;
+}
+.body > .body-04 > .type-page > ul .h > a > i {
+  float: left;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/sprite-01.png);
+  margin-top: 30px;
+  margin-left: 10px;
+  background-position-x: -16px;
+  transform: translateY(-50%);
+}
+.body > .body-04 > .type-page > ul .h:hover i {
+  background-position-x: 0;
+}

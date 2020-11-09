@@ -13,6 +13,13 @@
       "unicode_decimal": 58924
     },
     {
+      "icon_id": "3619240",
+      "name": "圆箭头",
+      "font_class": "yuanjiantou",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
       "icon_id": "4290525",
       "name": "俄罗斯",
       "font_class": "eluosi",
