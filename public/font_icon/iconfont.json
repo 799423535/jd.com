@@ -20,6 +20,13 @@
       "unicode_decimal": 59043
     },
     {
+      "icon_id": "4030708",
+      "name": "感叹",
+      "font_class": "gantan",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
       "icon_id": "4290525",
       "name": "俄罗斯",
       "font_class": "eluosi",
@@ -81,6 +88,13 @@
       "font_class": "xiangzuoanniu",
       "unicode": "e606",
       "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "12667730",
+      "name": "首 页",
+      "font_class": "shouye",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
     },
     {
       "icon_id": "13132258",

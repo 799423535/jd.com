@@ -1,7 +1,7 @@
 const express=require('express');
 const path=require('path');
 const createError=require('http-errors');
-const cookieParser = require('cookie-parser');
+const cookieParser = require('cookie-parser');//导入cookie的插件
 const userRouter=require('./router/user');
 
 let conf={//配置详情

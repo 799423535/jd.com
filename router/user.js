@@ -48,13 +48,12 @@ router.route('/login')
         let md5 = crypto.createHash('md5');
         let end_pwd = md5.update(user.password).digest('hex');
         let sql = `select * from user where username='${user.username}' and password='${end_pwd}'`;
+
         mysql.query(sql, (error, result) => {
             if (error) throw error;
             if (!result.length) {
-                console.log(111);
                 res.json({ msg: '用户名或密码错误', isLogin: false, username: user.username });
             } else {
-                console.log(222);
                 res.json({ msg: '登录成功', isLogin: true, username: user.username });
             }
         });

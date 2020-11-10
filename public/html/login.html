@@ -5,25 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="./../css/login.css">
+    <link rel="stylesheet" href="./../font_icon/iconfont.css">
     <script src="./../js/login.js" type="module"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="text-center h1">登录页面</div>
-
-        <div class="input-group">
-            <span class="input-group-addon" id="username">username</span>
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="username" name="username">
+    <header>
+        <div class="type-page clear_fix">
+            <div class="clear_fix">
+                <a href="">
+                    <img src="./../img/login_log.png" alt="">
+                </a>
+                <b></b>
+            </div>
+            <a href=""><b></b>登录页面，调查问卷</a>
         </div>
-        <div class="input-group">
-            <span class="input-group-addon" id="password">password</span>
-            <input type="password" class="form-control" placeholder="password" aria-describedby="password" name="password">
+    </header>
+    <div class="baner">
+        <p><i class="iconfont icon-gantan"></i>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版<a href="">《京东隐私政策》</a>已上线，将更有利于保护您的个人隐私。</p>
+    </div>
+    <div class="main">
+        <div class="type-page">
+             <div class="loginwrap">
+                   <div class="tips">
+                        <p><i class="iconfont icon-gantan"></i>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+                       
+                    </div>
+                    <div class="loginmethod  clear_fix">
+                            <div>扫码登录</div>
+                            <div class="active">账户登录</div>
+                    </div>
+                    <div id="err"></div>
+                    <div class="zhh">
+                        <div></div>
+                        <input type="text" placeholder="邮箱/用户名/登录手机" id="username">
+                    </div>
+                    <div class="mima">
+                        <div></div>
+                        <input type="password" placeholder="密码" id="password">
+                    </div>
+                    <p class="clear_fix"><a href="">忘记密码</a></p>
+                    <a href="javascript:;" id="submit">登录</a>
+                    <div class="last clear_fix">
+                        <b></b><span>QQ</span>
+                        <div></div>
+                        <b></b><span>微信</span>
+                        <p><a href="">立即注册</a></p>
+                    </div>
+             </div>
         </div>
-        <div class="msg" style="height: 20px;color: red;text-align: center"></div>
-        <input type="button" value="提交" id="submit" class="btn btn-success btn-block">
-
+    </div>
+    <div class="footer">    
+           <div class="type-page">
+               <p>
+                    <a href="">联系我们</a>|
+                    <a href="">人才招聘</a>|
+                    <a href="">关于我们</a>|
+                    <a href="">商家入驻</a>|
+                    <a href="">广告服务</a>|
+                    <a href="">手机京东</a>|
+                    <a href="">友情链接</a>|
+                    <a href="">销售联盟</a>|
+                    <a href="">京东社区</a>|
+                    <a href="">京东公益</a>|
+                    <a href="">English Site</a>
+               </p>
+               <p>Copyright © 2004-2020  京东JD.com 版权所有</p>
+           </div>
     </div>
 </body>
 
