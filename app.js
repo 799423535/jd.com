@@ -3,7 +3,7 @@ const path=require('path');
 const createError=require('http-errors');
 const cookieParser = require('cookie-parser');//导入cookie的插件
 const userRouter=require('./router/user');
-
+const productRouter=require('./router/product');
 let conf={//配置详情
     port:8888,
     host:'localhost'
@@ -12,11 +12,13 @@ const app=express();//启动应用
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 app.use(cookieParser());//设置cookie
-app.use(express.static(path.join(__dirname,'public')));//添加cookie
+app.use(express.static(path.join(__dirname,'public')));//设置静态目录
 
 //------router---------------------
+//用户
 app.use('/user',userRouter);
-
+//商品
+app.use('/product',productRouter);
 
 //------router---------------------
 

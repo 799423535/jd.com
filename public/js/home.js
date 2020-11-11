@@ -2,6 +2,7 @@ import './library/jquery.js';
 import './library/jquery.load.js';
 import './library/tabs.js';
 import 'https://unpkg.com/swiper/swiper-bundle.js';
+import {baseUrl} from './library/conf.js';
 //大轮播图
 
 (() => {
@@ -74,7 +75,7 @@ import 'https://unpkg.com/swiper/swiper-bundle.js';
 })();
 //懒加载
 $(function() {
-    $("img.lazy").lazyload({effect: "fadeIn",});
+    $("img.lazy").lazyload({effect: "fadeIn"});
 });
 //菜单栏mouseover事件
 $('#left-item>li').hover(function(){
@@ -124,3 +125,20 @@ $(window).on('scroll', function () {
         a.eq(3).addClass('active')
     }
 });
+
+//首页数据渲染
+(function(){
+   $.ajax({
+       type: "get",
+       url: `${baseUrl}/product`,
+       dataType: "json",
+       success: function (res) {
+           res.forEach((elm,i)=>{
+               let picture=JSON.parse(elm.picture)[0];
+               $('#con-left-ul>li').eq(i).children('a').attr('href',`${baseUrl}/html/product.html?pid=${res[i].pid}`);
+               $('#con-left-ul>li').eq(i).children('a').children('.top').children('img').attr('src',`../${picture.src}`);
+           });
+       }
+   });
+})();
+
