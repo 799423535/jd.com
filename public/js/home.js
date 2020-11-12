@@ -1,7 +1,7 @@
 import './library/jquery.js';
 import './library/jquery.load.js';
 import './library/tabs.js';
-import 'https://unpkg.com/swiper/swiper-bundle.js';
+import './library/swiper.js';
 import { baseUrl } from './library/conf.js';
 //大轮播图
 
