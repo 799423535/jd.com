@@ -240,7 +240,7 @@
   padding-bottom: 0;
 }
 .sec > div > .type-page > div:nth-child(1) > .recommend > div:nth-of-type(2) > span {
-  display: block;
+  display: none;
   width: 25px;
   height: 35px;
   position: absolute;
@@ -958,12 +958,12 @@
   position: relative;
   overflow: hidden;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > div {
   width: 600px;
   height: 100%;
   float: left;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > a {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > div > a {
   display: block;
   padding: 10px;
   width: 180px;
@@ -971,14 +971,14 @@
   float: left;
   position: relative;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > a > .img01 {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > div > a > .img01 {
   margin: 30px 30px 0;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > a > .img01 > img {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > div > a > .img01 > img {
   width: 120px;
   height: 120px;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > a > div:nth-child(2) {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > div > a > div:nth-child(2) {
   height: 80px;
   padding-top: 10px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(220, 224, 236, 0.5));
@@ -986,16 +986,16 @@
   font-size: 14px;
   position: relative;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > a > div:nth-child(2) > p:nth-child(1) {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > div > a > div:nth-child(2) > p:nth-child(1) {
   color: #666;
   font-size: 14px;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > a > div:nth-child(2) > p:nth-child(2) {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > div > a > div:nth-child(2) > p:nth-child(2) {
   color: #333;
   font-weight: 700;
   font-size: 14px;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > a > div:nth-child(2) > div {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > div > a > div:nth-child(2) > div {
   color: #e1251b;
   border-radius: 14px;
   width: 82px;
@@ -1011,23 +1011,15 @@
   margin-top: 4px;
   transition: background-color 0.2s ease;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > a > div:nth-child(2) > div:hover {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > div > a > div:nth-child(2) > div:hover {
   color: white;
   border-color: transparent;
   background-color: #c81623;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > a > div:nth-child(2) > div > i {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > div > a > div:nth-child(2) > div > i {
   font-size: 10px;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > ul {
-  margin-left: -6px;
-  bottom: 16px;
-  position: absolute;
-  left: 50%;
-  font-size: 0;
-  text-align: center;
-}
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > ul > li {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > ul > .swiper-pagination-bullet {
   position: relative;
   display: inline-block;
   width: 4px;
@@ -1037,7 +1029,7 @@
   background: #999;
   transition: background 0.2s ease;
 }
-.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > ul > li.active {
+.sec > div > .type-page > div:nth-child(2) > ul > li:last-child > div > ul > .swiper-pagination-bullet-active {
   background: #e1251b;
 }
 #list {

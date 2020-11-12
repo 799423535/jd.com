@@ -1,25 +1,104 @@
 import './library/jquery.js';
 import './library/jquery.md5.js';
-import cookie from './library/cookie.js';
-$('#submit').on('click', function () {
-    let password = $.md5($('[name=password]').val());
-    $.ajax({
-        type: "post",
-        url: "http://localhost:8888/user/reg",
-        data: {
-            username: $('[name=username]').val(),
-            password: password,
-            email: $('[name=email]').val(),
-            iphone: $('[name=iphone]').val(),
-            address: $('[name=address]').val()
-        },
-        dataType: "json",
-        success: function (data) {
-            if(data.error){
-                $('.msg').html(data.msg);
-            }else{
-                location='http://localhost:8888/html/login.html';
-            }
+import './library/cookie.js';
+console.log($.md5);
+let reg = {
+    username: /\w{8,16}/,
+    password: /^.{8,16}$/,
+    email: /^\w{5,}\@\w+\.(com|net|org)(\.cn)?$/,
+    iphone: /^1\d{10}$/,
+    address: /.{2,}/
+};
+let arr = [6];
+$('input').on('blur',function () {
+    let tem = $(this);
+    if (tem.attr('id') === 'username') {
+        let flag = reg['username'].test(tem.val());
+        console.log();
+        if (!flag) {     
+            tem.parent().next().css('color', 'red').html('你的输入账号不符合规则');
+            arr[0]=false;
+        } else {
+            tem.parent().next().css('color', 'green').html('验证通过');
+            arr[0]=true;
         }
-    });
+    }
+    if (tem.attr('id') === 'password') {
+        let flag = reg['password'].test(tem.val());
+        if (!flag) {
+            tem.parent().next().css('color', 'red').html('你的输入密码不符合规则');
+            arr[1]=false;
+        } else {
+            tem.parent().next().css('color', 'green').html('验证通过');
+            arr[1]=true;
+        }
+    }
+    if (tem.attr('id') === 'password2') {
+        let flag = tem.val()==$('#password').val();
+        if (!flag) {
+            tem.parent().next().css('color', 'red').html('两次密码不一致');
+            arr[2]=false;
+        } else {
+            tem.parent().next().css('color', 'green').html('验证通过');
+            arr[2]=true;
+        }
+    }
+    if (tem.attr('id') === 'email') {
+        let flag = reg['email'].test(tem.val());
+        if (!flag) {
+            tem.parent().next().css('color', 'red').html('你的输入邮箱不符合规则');
+            arr[3]=false;
+        } else {
+            tem.parent().next().css('color', 'green').html('验证通过');
+            arr[3]=true;
+        }
+    }
+    if (tem.attr('id') === 'iphone') {
+        let flag = reg['iphone'].test(tem.val());
+        if (!flag) {
+            tem.parent().next().css('color', 'red').html('你的输入手机号不符合规则');
+            arr[4]=false;
+        } else {
+            tem.parent().next().css('color', 'green').html('验证通过');
+            arr[4]=true;
+        }
+    }
+    if (tem.attr('id') === 'address') {
+        let flag = reg['address'].test(tem.val());
+        if (!flag) {
+            tem.parent().next().css('color', 'red').html('你的输入地址不符合规则');
+            arr[5]=false;
+        } else {
+            tem.parent().next().css('color', 'green').html('验证通过');
+            arr[5]=true;
+        }
+    }
+
+});
+
+$('#submit').on('click', function () {
+    if(arr.every(elm=>elm)){
+        let password = $.md5($('#password').val());
+        $.ajax({
+            type: "post",
+            url: "http://localhost:8888/user/reg",
+            data: {
+                username: $('#username').val(),
+                password: password,
+                email: $('#email').val(),
+                iphone: $('#iphone').val(),
+                address: $('#address').val()
+            },
+            dataType: "json",
+            success: function (data) {
+                if (data.error) {
+                    $('.msg').html(data.msg);
+                } else {
+                    location = 'http://localhost:8888/html/login.html';
+                }
+            }
+        });
+    }else{
+        $(this).next().html('请填写完整的注册信息');
+    }
 });

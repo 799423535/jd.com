@@ -19,7 +19,7 @@ import cookie from './library/cookie.js';
                     let picture = JSON.parse(elm.picture)[0];
                     tem += `
                 <div class="shop-car">
-                <div><input type="checkbox"   class="car-ck">选择商品</div>
+                <div><input type="checkbox"   class="car-ck" data-pid="${elm.pid}">选择商品</div>
                 <ul class="clear_fix">
                     <li>
                         <img src="../${picture.src}" alt="">
@@ -53,6 +53,19 @@ import cookie from './library/cookie.js';
                
                 $('#at .car-ck').on('click', function () {                    
                         fn();  
+                        if(Array.from($('#at .car-ck')).every(elm=>elm.checked===true)){
+                             $('#allCheck').prop('checked',true);
+                        }else{
+                            $('#allCheck').prop('checked',false);
+                        }
+                });
+                $('#allCheck').on('click',function(){
+                    if($('#allCheck').prop('checked')){
+                        $('#at .car-ck').prop('checked',true);
+                    }else{
+                        $('#at .car-ck').prop('checked',false   );
+                    }
+                    fn();
                 });
                 $('.min').on('click',function(){
                     let cn=$(this).siblings('.count');
@@ -89,6 +102,32 @@ import cookie from './library/cookie.js';
                     cookie.set("shop",JSON.stringify(arr),1);
                     location.reload();
                 });
+                $('#toPrice').on('click',function(){
+                    let arr=[];
+                    Array.from($('#at .car-ck')).forEach((elm)=>{
+                        if(elm.checked)arr.push(parseInt($(elm).attr('data-pid')));
+                                            
+                    });
+                    
+                    let shop=JSON.parse(cookie.get('shop'));
+                    let arr1=[];
+                    shop.forEach(((elm,i)=>{      
+                         if(arr.indexOf(elm.pid)!=-1){
+                            arr1.push(i);
+                         };
+                    }));
+                    for(let i=arr1.length-1;i>=0;i--){
+                        shop.splice(arr1[i],1);
+                    }                 
+                    if(shop.length){
+                        cookie.set('shop',JSON.stringify(shop),1)
+                    }else{
+                        cookie.remove('shop');
+                    }
+                    location.reload();
+                });
+                
+                
             }
         });
     }

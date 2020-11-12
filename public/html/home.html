@@ -18,6 +18,25 @@
 </head>
 
 <body>
+    <div id="search">
+        <div class="type-page">
+            <div></div>
+            <div>
+                <form action="" class="clear_fix">
+                    <input type="text" placeholder="健康生活" >
+                    
+                    <a href="" class="iconfont  icon-zhaoxiangji"></a>
+                    <button>
+                        <i class="iconfont icon-sousuo"></i>
+                    </button>
+                    <a href="./shopping.html">
+                        <i class="iconfont icon-shop-car-select"></i>
+                        <span>我的购物车</span>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="header-top">
 
@@ -588,7 +607,10 @@
                 </div>
                 <div>
                     <form action="" class="clear_fix">
-                        <input type="text" placeholder="健康生活">
+                        <input type="text" placeholder="健康生活" id="input_on">
+                        <ul id="content" class="hid">
+                            
+                        </ul>
                         <a href="" class="iconfont  icon-zhaoxiangji"></a>
                         <button>
                             <i class="iconfont icon-sousuo"></i>
@@ -4261,6 +4283,7 @@
                               </a>
                           </div>
                           <div>
+                              
                                 <a href="">
                                     <img src="./../img/recommend02.webp" alt="">
                                 </a>
@@ -4646,9 +4669,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <div>
-                                <a href="">
+                        <li class="slider">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                <a href="" class="swiper-slide">
                                     <div class="img01">
                                         <img class="lazy"   data-original="./../img/b6-01.webp" alt="">
                                     </div>
@@ -4659,7 +4683,7 @@
                                     </div>
                                 </a>
                                    
-                                <a href="">
+                                <a href="" class="swiper-slide">
                                     <div class="img01">
                                         <img class="lazy"   data-original="./../img/b6-02.webp" alt="">
                                     </div>
@@ -4669,11 +4693,10 @@
                                          <div>品类秒杀 <i class="iconfont icon-xiangzuoanniu1"></i></div>
                                     </div>
                                 </a>
+                              </div>
+                              <ul class="swiper-pagination"></ul>
                             </div>
-                            <ul>
-                                <li class="active"></li>
-                                <li></li>
-                            </ul>
+                         
                         </li>
                     </ul>
                     
@@ -5189,71 +5212,74 @@
                             <p>探索新生活 <i class="iconfont icon-yuanjiantou"></i></p>
                         </div>
                     </div>
-                    <div class="right">
-                        <ul class="clear_fix">
+                    <div class="right ">
+                        <ul class="clear_fix scroll">
                                 <li><a href="">
                                     <p>Apple12 双摄5G 手机</p>
-                                    <img class="lazy"   data-original="./../img/body3-r01.webp" alt="">
+                                    <img src="./../img/body3-r01.webp" alt="">
                                 </a></li>
                                 <li><a href="">
                                         
-                                        <img class="lazy"   data-original="./../img/body3-r02.webp" alt="">
+                                        <img src="./../img/body3-r02.webp" alt="">
                                         <p>Apple12 双摄5G 手机</p>
                                 </a></li>
                                 <li><a href="">                                       
                                         <p>微软全息AR眼镜</p>
-                                        <img class="lazy"   data-original="./../img/body3-r03.webp" alt="">
+                                        <img src="./../img/body3-r03.webp" alt="">
                                 </a></li>
                                 <li><a href="">                                       
-                                        <img class="lazy"   data-original="./../img/body3-r04.webp" alt="">
+                                        <img src="./../img/body3-r04.webp" alt="">
                                         <p>三星 光学防抖 手机</p>
                                 </a></li>
                                 <li><a href="">                                       
                                         <p>尼康 8K全画幅 相机</p>
-                                        <img class="lazy"   data-original="./../img/body3-r05.webp" alt="">
+                                        <img src="./../img/body3-r05.webp" alt="">
                                 </a></li>
                                 <li><a href="">                                       
-                                        <img class="lazy"   data-original="./../img/body3-r06.webp" alt="">
+                                        <img src="./../img/body3-r06.webp" alt="">
                                         <p>佳能 照相机移轴镜头</p>
                                 </a></li>
                                 <li><a href="">                                       
                                     <p>美的 多功能 防烫电热油汀</p>
-                                    <img class="lazy"   data-original="./../img/body3-r07.webp" alt="">
+                                    <img src="./../img/body3-r07.webp" alt="">
                                 </a></li>
                                 <li><a href="">                                       
-                                        <img class="lazy"   data-original="./../img/body3-r08.webp" alt="">
+                                        <img src="./../img/body3-r08.webp" alt="">
                                         <p>佳能 单反 相机</p>
                                 </a></li>
                                 <li><a href="">                                       
                                         <p>雕塑家 四边微边框 显示器</p>
-                                        <img class="lazy"   data-original="./../img/body3-r09.webp" alt="">
+                                        <img src="./../img/body3-r09.webp" alt="">
                                 </a></li>
                                 <li><a href="">                                       
-                                        <img class="lazy"   data-original="./../img/body3-r10.webp" alt="">
+                                        <img src="./../img/body3-r10.webp" alt="">
                                         <p>华为 全面屏 笔记本</p>
                                 </a></li>
                                 <li><a href="">
                                         <p>Apple12 双摄5G 手机</p>
-                                        <img class="lazy"   data-original="./../img/body3-r01.webp" alt="">
+                                        <img src="./../img/body3-r01.webp" alt="">
                                     </a></li>
                                     <li><a href="">
                                             
-                                            <img class="lazy"   data-original="./../img/body3-r02.webp" alt="">
+                                            <img src="./../img/body3-r02.webp" alt="">
                                             <p>Apple12 双摄5G 手机</p>
                                     </a></li>
                                     <li><a href="">                                       
                                             <p>微软全息AR眼镜</p>
-                                            <img class="lazy"   data-original="./../img/body3-r03.webp" alt="">
+                                            <img src="./../img/body3-r03.webp" alt="">
                                     </a></li>
                                     <li><a href="">                                       
-                                            <img class="lazy"   data-original="./../img/body3-r04.webp" alt="">
+                                            <img src="./../img/body3-r04.webp" alt="">
                                             <p>三星 光学防抖 手机</p>
                                     </a></li>
                                     <li><a href="">                                       
                                             <p>尼康 8K全画幅 相机</p>
-                                            <img class="lazy"   data-original="./../img/body3-r05.webp" alt="">
+                                            <img src="./../img/body3-r05.webp" alt="">
                                     </a></li>
-                        </ul>
+                        </ul>  
+                        <div class="scroll-bar">
+                            <span class="scroll-points"></span>
+                        </div>   
                     </div>
                </div>
         </div>
@@ -5278,7 +5304,7 @@
                     </li>
                     <li class="tabs">
                         <h2 class="h"><a href=""><span>排行榜</span> <i></i></a></h2>
-                        <ul class="clear_fix">
+                        <ul class="clear_fix " id="tabs_self">
                             <li><a href="" class="active">大家电</a></li>
                             <li><a href="">电脑整机</a></li>
                             <li><a href="">面膜护理</a></li>
@@ -5290,8 +5316,8 @@
                                 <div><div><span>TOP</span><p>02</p></div></div>
                                 <div><div><span>TOP</span><p>03</p></div></div>
                             </div>
-                            <div  class="right">
-                                <div class="tabs-bot ">
+                            <div  class="right clear_fix" id="ac01">
+                                <div class="tabs-bot active">
                                      <div class="clear_fix">
                                          <img src="./../img/body04-tabbot-01.webp" alt="">
                                          <span>海尔（Haier) 10KG全自动BLDC变频滚筒洗衣机 EG10014B39GU1</span>
@@ -5305,7 +5331,7 @@
                                             <span>小米电视4A 60英寸 L60M5-4A 4K超高清 HDR 内置小爱 2GB+8GB 教育电视 人工智能语音网络液晶平板电视</span>
                                      </div>
                                 </div>
-                                <div class="tabs-bot active">
+                                <div class="tabs-bot ">
                                         <div class="clear_fix">
                                             <img src="./../img/body04-tabbot-04.webp" alt="">
                                             <span>Apple iPad 10.2英寸 平板电脑（ 2020年新款 128G WLAN版/Retina显示屏/A12仿生芯片MYLF2CH/A）金色</span>
@@ -5321,29 +5347,29 @@
                                    </div>
                                    <div class="tabs-bot ">
                                         <div class="clear_fix">
-                                            <img class="lazy"   data-original="./../img/body04-tabbot-07.webp" alt="">
+                                            <img src="./../img/body04-tabbot-07.webp" alt="">
                                             <span>兰蔻（LANCOME）大粉水新清滢柔肤水400ml 化妆品套装护肤 化妆水 爽肤水 补水保湿</span>
                                         </div>
                                         <div class="clear_fix">
-                                               <img class="lazy"   data-original="./../img/body04-tabbot-08.webp" alt="">
+                                               <img src="./../img/body04-tabbot-08.webp" alt="">
                                                <span>美迪惠尔(Mediheal)水润保湿面膜10片水库针剂(补水 男女护肤适用）可莱丝 韩国进口</span>
                                         </div>
                                         <div class="clear_fix">
-                                               <img class="lazy"   data-original="./../img/body04-tabbot-09.webp" alt="">
+                                               <img src="./../img/body04-tabbot-09.webp" alt="">
                                                <span>韩国进口 蒂佳婷(Dr.Jart+)水动力活力水润蓝药丸面膜25g*5片/盒 紧急补水 晒后修复 男女通用</span>
                                         </div>
                                    </div>
                                    <div class="tabs-bot ">
                                         <div class="clear_fix">
-                                            <img class="lazy"   data-original="./../img/body04-tabbot-10.webp" alt="">
+                                            <img src="./../img/body04-tabbot-10.webp" alt="">
                                             <span>三只松鼠每日坚果 750g/30袋 儿童孕妇零食节日大礼包送女友混合干果节日礼盒腰果葡萄干核桃仁开心果</span>
                                         </div>
                                         <div class="clear_fix">
-                                               <img class="lazy"   data-original="./../img/body04-tabbot-11.webp" alt="">
+                                               <img src="./../img/body04-tabbot-11.webp" alt="">
                                                <span>三只松鼠奶油味夏威夷果 坚果炒货孕妇坚果每日坚果干果零食160g/袋</span>
                                         </div>
                                         <div class="clear_fix">
-                                               <img class="lazy"   data-original="./../img/body04-tabbot-12.webp" alt="">
+                                               <img src="./../img/body04-tabbot-12.webp" alt="">
                                                <span>三只松鼠手撕面包 饼干蛋糕千糕点零食酵母面包代餐早餐口袋软面包礼盒 1000g/盒</span>
                                         </div>
                                    </div>
@@ -5621,8 +5647,126 @@
                  </ul>
              </div>
         </div>
+        <h2 class="body06-h01 type-page" id="weini">为你推荐</h2>
+        <div class="body06-01">
+            <div class="type-page">
+                <ul class="clear_fix">
+                    <li class="first">
+                        <a href="">
+                            <div><span>精选</span></div>
+                            <div>猜你喜欢</div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                          <div><span>智能先锋</span></div>
+                          <div>大电器城</div> 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="">
+                          <div><span>居家优品</span></div>
+                          <div>品质生活</div> 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="">
+                          <div><span>超市百货</span></div>
+                          <div>百货生鲜</div> 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="">
+                          <div><span>时尚达人</span></div>
+                          <div>美妆穿搭</div> 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="">
+                          <div><span>进口好物</span></div>
+                            <div>京东国际</div> 
+                       </a>
+                    </li>
+                    
+                    
+                    
+                </ul>
+                <ul class="clear_fix">
+                    <li>
+                        <div><img src="./../img/weini01.webp" alt=""></div>
+                        <div>鹿鞭参精片人参牡蛎玛咖黄精桑葚覆盆子参鹿鞭片牡蛎肽膏高纯度鹿茸男性口服正品 一盒</div>
+                        <div>
+                            <span>￥</span> <span>3559.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="./../img/weini02.webp" alt=""></div>
+                        <div>泽默（ZEMO）瑞士手表 黑桃K系列男士时尚全自动镂空机械表男表 正品名表酒桶型防水背透运动腕表 银白橡胶表带 个性机械美学 Z664-SC43 一盒</div>
+                        <div>
+                            <span>￥</span> <span>3199.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="./../img/weini03.webp" alt=""></div>
+                        <div>高露洁（Colgate） 适齿炭牙刷 软毛 4支 （炫彩刷柄 软毛深洁）（新老包装随机发） 一盒</div>
+                        <div>
+                            <span>￥</span> <span>9.90</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="./../img/weini04.webp" alt=""></div>
+                        <div>泽默（ZEMO）瑞士手表 菲睿系列男士时尚全自动机械表 正品防水背透商务腕表 银白橡胶表带 个性机械美学 Z464-SC4146 一盒</div>
+                        <div>
+                            <span>￥</span> <span>2780.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="./../img/weini05.webp" alt=""></div>
+                        <div>50只装现货一次性口罩专卖三层防护防尘透气男女成人口罩批发 三层过滤(含熔喷层) 100只 一盒</div>
+                        <div>
+                            <span>￥</span> <span>15.80</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="./../img/weini06.webp" alt=""></div>
+                        <div>ROG幻14 轻薄商务办公设计师14英寸2K屏笔记本电脑(锐龙R7-4800HS 8核 7nm 16G 512GSSD RTX2060MaxQ)经典黑 一盒</div>
+                        <div>
+                            <span>￥</span> <span>9969.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="./../img/weini07.webp" alt=""></div>
+                        <div>狮王（Lion）细齿洁弹力护龈牙刷*4支装 软毛牙刷 护理牙刷 极细刷毛 深入清洁 弹力刷柄 柔韧护龈 一盒</div>
+                        <div>
+                            <span>￥</span> <span>23.50</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="./../img/weini08.webp" alt=""></div>
+                        <div>WOWO喔喔成年猫粮冻干奶糕无谷全价去毛球老年幼年猫干粮 4袋共4斤 一盒</div>
+                        <div>
+                            <span>￥</span> <span>83.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="./../img/weini09.webp" alt=""></div>
+                        <div>黑人（DARLIE）超白竹炭深洁牙膏190g 去牙渍 亮白牙齿（新老包装随机发放） 一盒</div>
+                        <div>
+                            <span>￥</span> <span>15.50</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="./../img/weini10.webp" alt=""></div>
+                        <div>初出茅庐</div>
+                        <div>
+                            <span>￥</span> <span>58.8</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <ul id="list">
+     <ul id="list">
             <li>
                 <a href="javascript:;" title="miaosha" class="active">京东秒杀</a>
             </li>
@@ -5636,7 +5780,7 @@
                 <a href="javascript:;" title="pindao">频道广场</a>
             </li>
             <li>
-                <a href="javascript:;" title="weather">为你推荐</a>
+                <a href="javascript:;" title="weini">为你推荐</a>
             </li>
             <li>
                 <a href="javascript:;" title="ok">客服</a>

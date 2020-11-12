@@ -350,6 +350,34 @@ header > .header-bot > .type-page > div:nth-child(2) > form {
   margin-top: 25px;
   margin-left: 60px;
 }
+header > .header-bot > .type-page > div:nth-child(2) > form > #content {
+  display: block;
+  background-color: white;
+  position: absolute;
+  margin-top: 42px;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 100000;
+  border: 1px solid #ccc;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > #content > li {
+  width: 465px;
+  height: 24px;
+  line-height: 24px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > #content > li > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #666;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > #content > li:hover {
+  background-color: #ebebeb;
+}
+header > .header-bot > .type-page > div:nth-child(2) > form > #content.hid {
+  display: none;
+}
 header > .header-bot > .type-page > div:nth-child(2) > form > input {
   padding: 2px 44px 2px 17px;
   font-size: 12px;
@@ -359,7 +387,7 @@ header > .header-bot > .type-page > div:nth-child(2) > form > input {
   border: 2px solid #e1251b;
   float: left;
 }
-header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(2) {
+header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(3) {
   position: absolute;
   z-index: 999;
   left: 453px;
@@ -367,7 +395,7 @@ header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(2) {
   font-size: 14px;
   transform: translateY(-50%);
 }
-header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(2):hover {
+header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(3):hover {
   color: red;
 }
 header > .header-bot > .type-page > div:nth-child(2) > form > button {
@@ -384,7 +412,7 @@ header > .header-bot > .type-page > div:nth-child(2) > form > button:hover {
 header > .header-bot > .type-page > div:nth-child(2) > form > button > i {
   color: white;
 }
-header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(4) {
+header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(5) {
   float: left;
   display: block;
   width: 130px;
@@ -396,10 +424,10 @@ header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(4) {
   text-align: center;
   font-size: 12px;
 }
-header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(4):hover {
+header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(5):hover {
   border-color: #e1251b;
 }
-header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(4) > i {
+header > .header-bot > .type-page > div:nth-child(2) > form > a:nth-child(5) > i {
   font-size: 12px;
   margin-right: 8px;
   font-weight: bold;

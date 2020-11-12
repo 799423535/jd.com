@@ -1,6 +1,9 @@
 import './library/jquery.js';
 import { baseUrl } from './library/conf.js';
 import cookie from './library/cookie.js';
+import './library/tools.js';
+import { fdj } from './library/move.js';
+
 //获取某个商品详情
 (function () {
     let pid = location.search.split('=')[1];
@@ -13,10 +16,15 @@ import cookie from './library/cookie.js';
             let picture = JSON.parse(res[0].picture)[2];
             let tem = `
               <div class="left">
-                    <div>
-                        <img src="../${picture.src}" alt="">
-                    </div>
-                    <div></div>
+                    <div class="wrap">
+                    <div class="biger" id="biger"></div>
+                    <div class="imgs">
+                        <div class="main" id="main">
+                            <div class="mask" id="mask"></div>
+                        </div>
+                        <ul class="smaller" id="smaller"></ul>
+                        </div>
+                    </div>   
                 </div>
                 <div class="right">
                     
@@ -63,6 +71,7 @@ import cookie from './library/cookie.js';
                     </div>
                 </div>
               `;
+           
             $('.detail>.type-page').append(tem);
             $('#add').on('click', function () {
                 let a = $('#val').val();
@@ -98,10 +107,12 @@ import cookie from './library/cookie.js';
                     shop = [];
                     shop.push(s);
                 }
-                shop=JSON.stringify(shop);
+                shop = JSON.stringify(shop);
                 cookie.set("shop", shop, 1);
-                location=`${baseUrl}/html/shopping.html`;
+                location = `${baseUrl}/html/shopping.html`;
             }
+            let arr = JSON.parse(res[0].picture);
+            fdj(`../${arr[0].src}`, `../${arr[1].src}`, `../${arr[2].src}`, `../${arr[3].src}`, `../${arr[0].src}`);
         }
     });
 })();

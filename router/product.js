@@ -28,5 +28,15 @@ router.route('/getItems')
      });
   }
 });
-
+//获取信息（模糊查询）
+router.route('/getMes')
+.get((req,res,next)=>{
+     let mes=req.query.mes;
+     let sql=`
+     select * from product where pname like '%${mes}%' or title like '%${mes}%' or sub like '%${mes}%' or details like '%${mes}%' order by pid`;
+     mysql.query(sql,(err,results)=>{
+          if(err)console.log(err);
+          res.json(results);
+     });
+});
 module.exports=router;
