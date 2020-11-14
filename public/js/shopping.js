@@ -2,8 +2,13 @@ import './library/jquery.js';
 import { baseUrl } from './library/conf.js';
 import cookie from './library/cookie.js';
 
+(function(){
+    let flag=cookie.get('isLogin');
+    if(!flag){
+       location=`${baseUrl}/html/login.html`;
+    }
+})();
 (function () {
-
     let shop = JSON.parse(cookie.get('shop'));
     if (shop) {
         let str = shop.map((elm) => elm.pid).join();

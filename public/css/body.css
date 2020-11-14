@@ -416,6 +416,7 @@
   position: relative;
 }
 .body > .body-03 > .type-page > .right > ul {
+  user-select: none;
   width: 3000px;
   position: absolute;
   left: 0;

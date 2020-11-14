@@ -98,7 +98,7 @@ $('.tabs').tabs({
 $('#list>li>a').on('click', function () {
     let top = $('#' + $(this).attr('title')).offset().top;
     $('html').animate({
-        scrollTop: top-50
+        scrollTop: top - 50
     }, 500);
 
 });
@@ -138,11 +138,11 @@ $(window).on('scroll', function () {
 
 
 
-    if (top >= 900){
-        $('#search').css('display','block');
+    if (top >= 900) {
+        $('#search').css('display', 'block');
     }
-    if(top<900){
-        $('#search').css('display','none');
+    if (top < 900) {
+        $('#search').css('display', 'none');
     }
 });
 
@@ -165,18 +165,18 @@ $(window).on('scroll', function () {
 //焦点图滚动
 (function () {
     fns();
-    $('.scroll').hover(() => {
+    $('.right').hover(() => {
         $('.scroll').stop();
         let left = parseFloat($('.scroll').css('left'));
         let ra = left / 2000;
         let t = -($('.scroll-bar').width() - $('.scroll-points').width()) * ra;
         $('.scroll-points').css('left', t + 'px');
-        
     }, () => {
         fns();
     });
     function fns() {
-        let s = (2000 - $('.scroll').scrollLeft()) * 12.5;
+        let s = (2000 + ($('.scroll').offset().left-$('#body03-sc').offset().left)) * 12.5;
+        console.log(s);
         $('.scroll').animate({
             left: '-2000'
         }, s, function () {
@@ -184,46 +184,80 @@ $(window).on('scroll', function () {
             fns();
         });
     }
-    
+
 })();
-
-//tabs切换
-$('#tabs_self>li>a').on('mouseover',function(){
-     let tabli=$('#tabs_self>li');
-     let allA=$('#tabs_self>li>a');
-     allA.removeClass('active');
-     $(this).addClass('active');
-     let index=tabli.index($(this).parent());
-     $('#ac01').children().removeClass('active').eq(index).addClass('active');
-});
-
-
-$('#input_on').on('input',function(){
-    let ipt=$(this);
-    $.ajax({
-        type: "get",
-        url: "/product/getMes",
-        data: {'mes':ipt.val()},
-        dataType: "json",
-        success: function (res) {
-             if(res.length){
-                  let tem='';
-                  res.forEach((elm,i)=>{
-                     tem+=`
-                    <li><a href="${baseUrl}/html/product.html?pid=${elm.pid}">${elm.pname}</a></li>
-                    `;
-                  });
-                  $('#content').html(tem).removeClass('hid');
-             }else{
-                $('#content').html('');
-             }
+//拖动滚动条，焦点图跟随移动
+$('.scroll-points').on('mousedown', function (ev) {
+    let pointsX = ev.offsetX;
+    $(document.body).on('mousemove', function fn(e) {
+        let x = e.pageX - pointsX - $('.scroll-bar').offset().left;
+        let all=$('.scroll-bar').width()-$('.scroll-points').width();
+        if (x < 0) {
+            x = 0
+        }else if(x>$('.scroll-bar').width()-$('.scroll-points').width()){
+            x=$('.scroll-bar').width()-$('.scroll-points').width()
         }
+        $('.scroll-points').css('left', x + 'px');
+        let lt=$('.scroll-points').offset().left- $('.scroll-bar').offset().left;
+        let rad=lt/all*-1;
+        $('.scroll').css('left',rad*2000+'px');
+    });
+    $('.scroll-points').on('mouseup',function(){
+        $(document.body).off();
     });
 });
-$('body').on('click',function(){
-    $('#content').addClass('hid');
+
+//tabs切换
+$('#tabs_self>li>a').on('mouseover', function () {
+    let tabli = $('#tabs_self>li');
+    let allA = $('#tabs_self>li>a');
+    allA.removeClass('active');
+    $(this).addClass('active');
+    let index = tabli.index($(this).parent());
+    $('#ac01').children().removeClass('active').eq(index).addClass('active');
 });
 
-$(window).on('blur',function(){
-    $('#content').addClass('hid');
-});
+
+//输入模糊查询
+(function () {
+    $('#input_on').on('input', debounce(function () {
+        let ipt = $(this);
+        $.ajax({
+            type: "get",
+            url: "/product/getMes",
+            data: { 'mes': ipt.val() },
+            dataType: "json",
+            success: function (res) {
+                if (res.length) {
+                    let tem = '';
+                    res.forEach((elm, i) => {
+                        tem += `
+                        <li><a href="${baseUrl}/html/product.html?pid=${elm.pid}">${elm.pname}</a></li>
+                        `;
+                    });
+                    $('#content').html(tem).removeClass('hid');
+                } else {
+                    $('#content').html('');
+                }
+            }
+        });
+    }, 500));
+    $('body').on('click', function () {
+        $('#content').addClass('hid');
+    });
+    $(window).on('blur', function () {
+        $('#content').addClass('hid');
+    });
+})();
+//防抖
+function debounce(callback, wait) {
+    let timer = null;
+    return function () {
+        let arg = arguments;
+        if (timer) clearTimeout(timer);
+        setTimeout(function () {
+            callback.apply(this, arg);
+        }.bind(this), wait);
+    }
+}
+

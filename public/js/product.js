@@ -86,6 +86,10 @@ import { fdj } from './library/move.js';
                 }
             });
             $('#btn').on('click', function () {
+                let flag=cookie.get('isLogin');
+                if(!flag){
+                location=`${baseUrl}/html/login.html`;
+                }
                 let count = $('#val').val();
                 addItem(res[0].pid, count)
             });

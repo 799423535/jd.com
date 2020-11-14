@@ -14,15 +14,12 @@ $('#submit').on('click', function () {
         dataType: "json",
         success: function (data) {
             if (!data.isLogin) {
-                console.log(111);
                 $('#err').html(data.msg);
                 $('#username').val('');
                 $('#password').val('');
             } else {
-                cookie.set('username', data.username,1);
-                cookie.set('username', data.password,1);
+                cookie.set('username', data.username);
                 cookie.set('isLogin', data.isLogin);
-                console.log(111);
                 location = "http://localhost:8888/html/home.html";
             }
         }
