@@ -92,7 +92,7 @@ $('#submit').on('click', function () {
             dataType: "json",
             success: function (data) {
                 if (data.error) {
-                    $('.msg').html(data.msg);
+                    $('.msg').css('color','red').html(data.msg);
                 } else {
                     location = 'http://localhost:8888/html/login.html';
                 }
