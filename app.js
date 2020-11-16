@@ -6,7 +6,7 @@ const userRouter=require('./router/user');
 const productRouter=require('./router/product');
 let conf={//配置详情
     port:8888,
-    host:'localhost'
+    host:'10.31.162.11'
 };
 const app=express();//启动应用
 app.use(express.json()) // for parsing application/json

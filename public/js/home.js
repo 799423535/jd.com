@@ -176,7 +176,6 @@ $(window).on('scroll', function () {
     });
     function fns() {
         let s = (2000 + ($('.scroll').offset().left-$('#body03-sc').offset().left)) * 12.5;
-        console.log(s);
         $('.scroll').animate({
             left: '-2000'
         }, s, function () {
@@ -202,7 +201,7 @@ $('.scroll-points').on('mousedown', function (ev) {
         let rad=lt/all*-1;
         $('.scroll').css('left',rad*2000+'px');
     });
-    $('.scroll-points').on('mouseup',function(){
+    $(document.body).on('mouseup',function(){
         $(document.body).off();
     });
 });

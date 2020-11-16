@@ -1,12 +1,13 @@
 import './library/jquery.js';
 import './library/jquery.md5.js';
 import cookie from './library/cookie.js';
+import {baseUrl} from './library/conf.js';
 
 $('#submit').on('click', function () {
     let password = $.md5($('#password').val());
     $.ajax({
         type: "post",
-        url: "http://localhost:8888/user/login",
+        url: `${baseUrl}/user/login`,
         data: {
             username: $('#username').val(),
             password: password
@@ -20,7 +21,7 @@ $('#submit').on('click', function () {
             } else {
                 cookie.set('username', data.username);
                 cookie.set('isLogin', data.isLogin);
-                location = "http://localhost:8888/html/home.html";
+                location = `${baseUrl}/html/home.html`;
             }
         }
     });

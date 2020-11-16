@@ -1,7 +1,7 @@
 import './library/jquery.js';
 import './library/jquery.md5.js';
 import './library/cookie.js';
-console.log($.md5);
+import {baseUrl} from './library/conf.js';
 let reg = {
     username: /\w{8,16}/,
     password: /^.{8,16}$/,
@@ -9,7 +9,7 @@ let reg = {
     iphone: /^1\d{10}$/,
     address: /.{2,}/
 };
-let arr = [6];
+let arr = [false,false,false,false,false,false];
 $('input').on('blur',function () {
     let tem = $(this);
     if (tem.attr('id') === 'username') {
@@ -77,11 +77,11 @@ $('input').on('blur',function () {
 });
 
 $('#submit').on('click', function () {
-    if(arr.every(elm=>elm)){
+    if(arr.every(elm=>elm)){     
         let password = $.md5($('#password').val());
         $.ajax({
             type: "post",
-            url: "http://localhost:8888/user/reg",
+            url: `${baseUrl}/user/reg`,
             data: {
                 username: $('#username').val(),
                 password: password,
@@ -93,12 +93,14 @@ $('#submit').on('click', function () {
             success: function (data) {
                 if (data.error) {
                     $('.msg').css('color','red').html(data.msg);
+                    $('#submit').next().html('');
                 } else {
-                    location = 'http://localhost:8888/html/login.html';
+                    location = `${baseUrl}/html/login.html`;
                 }
             }
         });
     }else{
-        $(this).next().html('请填写完整的注册信息');
+        
+        $(this).next().css('color','red').html('请填写完整的注册信息');
     }
 });

@@ -11,6 +11,7 @@
 }
 .detail > .type-page > .left > div:nth-child(1) {
   border: 1px solid #eee;
+  height: 447px;
 }
 .detail > .type-page > .right {
   width: 590px;
@@ -207,4 +208,17 @@
   background-color: #df3033;
   color: #fff;
   margin-left: 10px;
+}
+#main > #mask {
+  background-color: orange;
+  opacity: 0.5;
+}
+#biger {
+  background-color: white;
+  width: 600px;
+  height: 600px;
+}
+#biger > img {
+  width: 800px;
+  height: 800px;
 }

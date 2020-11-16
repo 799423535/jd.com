@@ -13,14 +13,14 @@ import { fdj } from './library/move.js';
         data: { "pid": pid },
         dataType: "json",
         success: function (res) {
-            let picture = JSON.parse(res[0].picture)[2];
+            let picture = JSON.parse(res[0].picture)[3];
             let tem = `
               <div class="left">
                     <div class="wrap">
                     <div class="biger" id="biger"></div>
-                    <div class="imgs">
+                    <div class="imgs" id="imgs">
                         <div class="main" id="main">
-                            <div class="mask" id="mask"></div>
+                            <div class="mask" id="mask" ></div>
                         </div>
                         <ul class="smaller" id="smaller"></ul>
                         </div>
