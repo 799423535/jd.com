@@ -70,17 +70,24 @@ import { fdj } from './library/move.js';
                         <a href="javascript:;" id="btn">加入购物车</a>    
                     </div>
                 </div>
-              `;
-           
+              `;           
             $('.detail>.type-page').append(tem);
             $('#val').on('blur',function(){
-                let reg=/d{1,}/g;
-                let flag=reg.test($(this).val());
-                if(!flag)$('#val').val(1);
+                let reg=/[0-9]+/;
+                let a=parseInt($(this).val());
+                if(a==$('#val').val()){
+                    let flag=reg.test(parseInt($('#val').val()));    
+                    if(a>res[0]['num'])a=res[0]['num'];
+                    $('#val').val(a);
+                    if(!flag)$('#val').val(1);
+                }else{
+                    $('#val').val(1)
+                }             
             });
             $('#add').on('click', function () {
                 let a = $('#val').val();
                 a++;
+                if(a>res[0]['num'])a=res[0]['num'];
                 $('#val').val(a);
             });
             $('#min').on('click', function () {
