@@ -73,6 +73,11 @@ import { fdj } from './library/move.js';
               `;
            
             $('.detail>.type-page').append(tem);
+            $('#val').on('blur',function(){
+                let reg=/d{1,}/g;
+                let flag=reg.test($(this).val());
+                if(!flag)$('#val').val(1);
+            });
             $('#add').on('click', function () {
                 let a = $('#val').val();
                 a++;

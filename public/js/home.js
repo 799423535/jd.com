@@ -3,6 +3,7 @@ import './library/jquery.load.js';
 import './library/tabs.js';
 import './library/swiper.js';
 import { baseUrl } from './library/conf.js';
+import cookie from './library/cookie.js';
 //大轮播图
 
 (() => {
@@ -260,3 +261,15 @@ function debounce(callback, wait) {
     }
 }
 
+//
+(function(){
+    let username=cookie.get('username');
+    if(username){
+        $('#index').html(username);
+        console.log(username);
+    }else{
+        let tem=`<a href="./login.html">你好，请登录</a>
+         <a href="./reg.html" style="color: red;padding-left: 5px;">免费注册</a>`;
+        $('#index').html(tem);
+    }
+})();

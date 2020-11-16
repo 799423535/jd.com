@@ -131,7 +131,12 @@ import cookie from './library/cookie.js';
                     }
                     location.reload();
                 });
-                
+                $('.count').on('blur',function(){
+                    console.log(1);
+                    let reg=/d{1,}/g;
+                    let flag=reg.test($(this).val());
+                    if(!flag)$(this).val(1);
+                });
                 
             }
         });
