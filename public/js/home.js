@@ -262,11 +262,7 @@ function debounce(callback, wait) {
 }
 
 //
-(function(){
-
-
-
-    
+(function(){  
     let username=cookie.get('username');
     if(username){
         $('#index').html(username);

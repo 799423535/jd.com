@@ -1,7 +1,11 @@
 const express = require('express');
 const mysql = require('./../dao/conn');
 const crypto = require('crypto');
+const code=require("./../library/mail");
+const fs=require('fs');
+const path=require('path');
 const router = express.Router();//生成路由
+
 
 router.route('/')//设置访问目录
     .get(function (req, res, next) {
@@ -10,7 +14,31 @@ router.route('/')//设置访问目录
             if (error) throw error;
             console.log(result);
         });
+});
+//获取验证码
+router.route('/getCode')
+.get((req,res,next)=>{
+    let cd=code(req.query.email);
+    console.log(cd);
+    fs.writeFile(path.join(__dirname,'..','public','temp',req.query.email),cd,function(err){
+         if(err)console.log(err);
+         res.json({msg:"验证码获取成功",isGain:true});
     });
+});
+//验证验证码
+router.route('/check')
+.post((req,res,next)=>{
+    let email=req.body.email;
+    let checkcode=req.body.checkcode;
+    fs.readFile(path.join(__dirname,'..','public','temp',email),'utf8',(err,data)=>{
+         if(err)console.log(err);
+         if(checkcode===data){
+            res.json({mes:"验证码正确",flag:true});
+         }else{
+            res.json({mes:"验证码错误",flag:false});
+         }
+    });
+});
 //注册
 router.route('/reg')//设置访问目录
     .post(function (req, res, next) {
@@ -32,6 +60,9 @@ router.route('/reg')//设置访问目录
                 mysql.query(sql, (error, result) => {
                     if (error) console.log(error);
                     if (result.insertId) {
+                        fs.unlink(path.join(__dirname,'..','public','temp',user.email),(err1)=>{
+                            if(err1)console.log(err1);         
+                        });
                         res.json({
                             msg: "注册成功",
                             username: user.username,
